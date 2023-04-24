@@ -98,17 +98,18 @@ public class Ex1 {
 
     // Introduction
     private static boolean intro() {
-        System.out.println("Hello! Welcome to guess the number!");
-        System.out.println("In this program, a number from 1 to 16 will be randomized and converted to binary.");
-        System.out.println("We will show you the number of digits the binary number has and you will have to guess it.");
-        System.out.println("Each time you'll guess a wrong number, another digit will be folded and you could try again!");
-        System.out.println();
-        System.out.println("Are you ready to play? (Y/N)");
+        
+        print("Hello! Welcome to guess the number!");
+        print("In this program, a number from 1 to 16 will be randomized and converted to binary.");
+        print("We will show you the number of digits the binary number has and you will have to guess it.");
+        print("Each time you'll guess a wrong number, another digit will be folded and you could try again!");
+        print("");
+        print("Are you ready to play? (Y/N)");
         String answer = scan.nextLine();
 
         while (!(answer.equalsIgnoreCase("Y") || answer.equalsIgnoreCase("N"))) {
-            System.out.println("Didn't catch that, try again please.");
-            System.out.println("Are you ready to play? (Y/N)");
+            print("Didn't catch that, try again please.");
+            print("Are you ready to play? (Y/N)");
             answer = scan.nextLine();
         }
 
