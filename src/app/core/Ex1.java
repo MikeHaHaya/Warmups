@@ -55,6 +55,7 @@ public class Ex1 {
 
             // Prints digits by variables
             for (int i = 0; i < showDigits; i++) {
+                // TODO -- Fix bug here, doesn't print the correct binary number
                 double divBy = Math.pow(10.0, (binRanNum.length() - i));
                 int digitsToPrint = (int) (binaryNum / divBy);
                 System.out.print(digitsToPrint);
