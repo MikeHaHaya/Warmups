@@ -34,6 +34,7 @@ public class Ex1 {
 
         String answer;
         int answerToInt;
+        int binaryNum = Integer.parseInt(binRanNum);
 
         print("So let us begin!");
         print(".");
@@ -45,21 +46,26 @@ public class Ex1 {
 
         boolean correct = false;
         int length = binRanNum.length();
+        int showDigits = 0;
 
         while (length > 0 && !correct) {
 
-            int showDigits = 0;
             print("Guess the number with these binary digits :");
+
 
             // Prints digits by variables
             for (int i = 0; i < showDigits; i++) {
-
+                double divBy = Math.pow(10.0, (binRanNum.length() - i));
+                int digitsToPrint = (int) (binaryNum / divBy);
+                System.out.print(digitsToPrint);
             }
 
             // Prints dots by variables
             for (int i = 0; i < length; i++) {
                 System.out.print("-");
             }
+
+            print("");
 
             // Scan answer
             while (true) {
@@ -87,6 +93,14 @@ public class Ex1 {
 
         }
 
+        if (correct)
+            print("You did it champ!");
+        else
+            print("Man you suck at this.");
+
+        print("The number was " + ranNum + " and it's binary number was " + binaryNum);
+        print("Come back soon!");
+
     }
 
     // Randomizes numbers and converts them
@@ -98,7 +112,7 @@ public class Ex1 {
 
     // Introduction
     private static boolean intro() {
-        
+
         print("Hello! Welcome to guess the number!");
         print("In this program, a number from 1 to 16 will be randomized and converted to binary.");
         print("We will show you the number of digits the binary number has and you will have to guess it.");
