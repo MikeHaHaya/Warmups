@@ -47,6 +47,7 @@ public class Ex1 {
         boolean correct = false;
         int length = binRanNum.length();
         int showDigits = 0;
+        int toPow = 0;
 
         while (length > 0 && !correct) {
 
@@ -54,12 +55,13 @@ public class Ex1 {
 
 
             // Prints digits by variables
-            for (int i = 0; i < showDigits; i++) {
-                // TODO -- Fix bug here, doesn't print the correct binary number
-                double divBy = Math.pow(10.0, (binRanNum.length() - i));
+            if (showDigits > 0) {
+                toPow++;
+                double divBy = Math.pow(10.0, (binRanNum.length() - toPow));
                 int digitsToPrint = (int) (binaryNum / divBy);
                 System.out.print(digitsToPrint);
             }
+
 
             // Prints dots by variables
             for (int i = 0; i < length; i++) {
