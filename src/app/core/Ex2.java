@@ -17,12 +17,17 @@ public class Ex2 {
         try {
 
             top = Integer.parseInt(answer);
+            if (top <= 0) {
+                throw new NumberFormatException("Number has to be an integer above 0.");
+            }
+
             for (int i = 0; i < top; i++) {
                 System.out.print(i + ", ");
             }
             System.out.print(top);
 
         } catch (NumberFormatException e) {
+            System.out.println("Number has to be an integer above 0.");
             System.out.println("Can't do that baby doll, goodbye now.");
         }
 
