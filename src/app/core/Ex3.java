@@ -31,7 +31,8 @@ public class Ex3 {
             System.out.print(stop);
 
         } catch (NumberFormatException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Something went wrong, make sure the start number is smaller than" +
+                    " the top number and that you input only integers.");
         }
 
     }
