@@ -34,7 +34,8 @@ public class Ex12 {
                 sum += num;
         }
 
-
+        System.out.println("Here is the sum of your silly equals: ");
+        System.out.println(sum);
     }
 
 }
