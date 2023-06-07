@@ -17,12 +17,24 @@ public class Ex12 {
             try {
                 String input = scan.nextLine();
                 int num = Integer.parseInt(input);
+                if (num < 0)
+                    throw new NumberFormatException();
 
+                numbers.add(num);
 
             } catch (NumberFormatException e) {
                 System.out.println("What the fuck man.");
             }
         }
+
+        // Sums the equals
+        int sum = 0;
+        for (Integer num: numbers) {
+            if (num % 2 == 0)
+                sum += num;
+        }
+
+
     }
 
 }
