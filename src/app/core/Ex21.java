@@ -34,10 +34,11 @@ public class Ex21 {
         System.out.println("In the fibonacci series, the value in index " + index
                 + " is: " + value);
 
-
+        scan.close();
 
     }
 
+    // Returns the index's value in the Fib series.
     private static int findIndexValue(int fibIndex) {
 
         int num1 = 1;
@@ -48,7 +49,7 @@ public class Ex21 {
         if (fibIndex == 1 || fibIndex == 2)
             return 1;
 
-        // Fib loop
+        // Fib loop after the 2nd index
         else {
             for (int i = 2; i <= fibIndex; i++) {
                 num3 = num1 + num2;
