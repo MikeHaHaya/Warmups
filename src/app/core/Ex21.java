@@ -1,6 +1,5 @@
 package app.core;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ex21 {
@@ -10,18 +9,18 @@ public class Ex21 {
     public static void main(String[] args) {
 
         boolean gotIt = false;
-        int num = 0;
+        int index = 0;
         System.out.println("Holla muchicho!");
         System.out.println("Today we're doing Fibonacci Java style.");
 
         while (!gotIt) {
             System.out.println("Choose an index and Java will show you on what number " +
-                    "the index stands in the Fibonacci series.");
+                    "the index stands in the Fibonacci series:");
             String input = scan.nextLine();
 
             try {
-                num = Integer.parseInt(input);
-                if (num < 0)
+                index = Integer.parseInt(input);
+                if (index <= 0)
                     throw new NumberFormatException();
                 gotIt = true;
 
@@ -31,16 +30,35 @@ public class Ex21 {
 
         }
 
+        int value = findIndexValue(index);
+        System.out.println("In the fibonacci series, the value in index " + index
+                + " is: " + value);
 
 
 
     }
 
-    private static int findIndexValue(int i) {
+    private static int findIndexValue(int fibIndex) {
 
+        int num1 = 1;
+        int num2 = 1;
+        int num3;
 
+        // Return 1 if the index is 1 or 2 (since doing the loop will only complicate the code)
+        if (fibIndex == 1 || fibIndex == 2)
+            return 1;
 
-        return 0;
+        // Fib loop
+        else {
+            for (int i = 2; i <= fibIndex; i++) {
+                num3 = num1 + num2;
+                num1 = num2;
+                num2 = num3;
+
+            }
+
+            return num2;
+        }
     }
 
 }
