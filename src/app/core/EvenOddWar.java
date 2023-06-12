@@ -37,7 +37,7 @@ public class EvenOddWar {
 
         } else {
             System.out.println("The odds rule the land!");
-            System.out.println("The evens army " + evens + " couldn't hold on against odds' squad " + odds);
+            System.out.println("The evens' army " + evens + " couldn't hold on against odds' squad " + odds);
             System.out.println("Winning them " + oddsSum + " to " + evensSum + ". Showtime.");
             System.out.println("Odds' supreme emperor after the battle: \"Not so even after all are ya?\"");
 
