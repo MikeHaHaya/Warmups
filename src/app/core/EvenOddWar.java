@@ -30,9 +30,16 @@ public class EvenOddWar {
         int oddsSum = sumUpArr(odds);
 
         if (evensSum > oddsSum) {
-            System.out.println("You are odd indeed!");
+            System.out.println("It's the evens' territory now!");
+            System.out.println("The odds' death-lineup " + odds + " fell down today against a tenacious evens group " + evens);
+            System.out.println("Winning them " + evensSum + " to " + oddsSum + " and doing it in fashion.");
+            System.out.println("Evens' lead general after the battle: \"Yeah, you are odd.\"");
 
         } else {
+            System.out.println("The odds rule the land!");
+            System.out.println("The evens army " + evens + " couldn't hold on against odds' squad " + odds);
+            System.out.println("Winning them " + oddsSum + " to " + evensSum + ". Showtime.");
+            System.out.println("Odds' supreme emperor after the battle: \"Not so even after all are ya?\"");
 
         }
 
