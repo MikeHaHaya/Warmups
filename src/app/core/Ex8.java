@@ -11,7 +11,7 @@ public class Ex8 {
         int rows = 0;
         int columns = 0;
 
-        // Get correct input
+        // Gets correct input
         boolean gotIt = false;
         while (!gotIt) {
 
@@ -35,7 +35,7 @@ public class Ex8 {
 
         }
 
-
+        // Prints correct output
         System.out.println("Here is your grid: ");
         for (int r = 0; r < rows; r++) {
             System.out.println();
