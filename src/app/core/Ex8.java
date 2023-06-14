@@ -36,6 +36,15 @@ public class Ex8 {
         }
 
 
+        System.out.println("Here is your grid: ");
+        for (int r = 0; r < rows; r++) {
+            System.out.println();
+
+            for (int c = 0; c < columns; c++) {
+                System.out.print("*");
+            }
+
+        }
 
     }
 }
