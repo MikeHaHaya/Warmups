@@ -6,7 +6,6 @@ public class Globals {
 
     public static Scanner scan = new Scanner(System.in);
 
-
     public static int getPositiveIntegerInput() throws NumberFormatException {
 
         String input = scan.nextLine();
