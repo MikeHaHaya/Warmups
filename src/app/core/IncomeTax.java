@@ -13,9 +13,10 @@ public class IncomeTax {
         System.out.println("Enter your annual income: ");
         int income = getPositiveIntegerInput();
         int tax = calcTax(income);
+        int taxPercent = (tax * 100 / income);
 
         System.out.println();
-        System.out.println(name + " needs to pay: " + tax + " in tax (out of " + income + " of the annual income).");
+        System.out.println(name + " needs to pay: " + tax + " in tax (" + taxPercent + "% out of " + income + " annual income).");
 
 
     }
