@@ -1,5 +1,6 @@
 package app;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Globals {
@@ -17,6 +18,16 @@ public class Globals {
         }
     }
 
-//    public static boolean
+    public static boolean getBooleanInput() throws InputMismatchException {
+
+        String input = scan.nextLine();
+        if (input.equalsIgnoreCase("Y"))
+            return true;
+        else if (input.equalsIgnoreCase("N"))
+            return false;
+        else
+            throw new InputMismatchException();
+
+    }
 
 }
