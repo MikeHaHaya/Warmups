@@ -15,7 +15,8 @@ public class Globals {
         } catch (NumberFormatException ignore) {
             throw new NumberFormatException("Something went wrong, make sure the number is a positive integer.");
         }
-
     }
+
+//    public static boolean
 
 }
